@@ -1,0 +1,89 @@
+.todo-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.todo-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.todo-container input {
+  width: 65%;   /* slightly smaller so button fits well */
+  margin-right: 12px;  /* space between input and button */
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+
+.todo-container input:focus {
+  border-color: #007bff;
+}
+
+.todo-container button {
+  
+  padding: 10px 16px;
+  margin-left: 12px; 
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  
+}
+
+.todo-container button:hover {
+  background: #0056b3;
+}
+
+.todo-container ul {
+  list-style: none;       /* remove bullets */
+  padding: 0;
+  margin-top: 20px;
+  text-align: left;       /* align text to left */
+}
+
+.todo-container li {
+  background: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;          /* arrange text + button on one line */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.todo-container li:hover {
+  background: #eef3f8;
+}
+
+.todo-container li button {
+  background: #dc3545;    /* red remove button */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  
+}
+
+.todo-container li button:hover {
+  background: #b02a37;    /* darker red on hover */
+}
+

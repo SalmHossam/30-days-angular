@@ -1,0 +1,102 @@
+.counter {
+    text-align: center;
+    margin: 60px auto;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    background: #f9f9f9;
+    padding: 40px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.counter:hover {
+    transform: translateY(-5px);
+}
+
+.counter h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #004494);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 86, 179, 0.4);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+
+/* Positive Counter */
+p.positive {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-shadow: 0 0 8px rgba(40, 167, 69, 0.7);
+  animation: glowPositive 2s infinite ease-in-out;
+  border: 2px solid #28a745;
+  padding: 8px 15px;
+  border-radius: 12px;
+  background: rgba(40, 167, 69, 0.1);
+  display: inline-block;
+}
+
+/* Neutral Counter */
+p.neutral {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border: 2px dashed #6c757d;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+p.neutral:hover {
+  background: linear-gradient(135deg, #e9ecef, #dee2e6);
+  transform: scale(1.05);
+}
+
+/* Negative Counter */
+p.negative {
+  color: #dc3545;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-decoration: underline wavy #dc3545;
+  background: rgba(220, 53, 69, 0.12);
+  border-radius: 12px;
+  padding: 12px 20px;
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.6);
+  animation: shake 0.6s ease-in-out infinite alternate;
+  display: inline-block;
+}
+
+
+/* Shake Animation for Negative */
+@keyframes shake {
+  0% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  100% { transform: translateX(-3px); }
+}

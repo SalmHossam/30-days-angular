@@ -1,0 +1,11 @@
+<div class="stopwatch">
+  <h2>Stopwatch</h2>
+  <p class="time-display">{{ elapsedTime * 1000 | date:'HH:mm:ss':'UTC' }}</p>
+  <div class="controls">
+    <button (click)="startStop()">
+        {{ isRunning ? 'Stop' : 'Start' }}
+    </button>
+    <button (click)="reset()" [disabled]="!elapsedTime">Reset</button>
+    </div>
+   
+  </div>
