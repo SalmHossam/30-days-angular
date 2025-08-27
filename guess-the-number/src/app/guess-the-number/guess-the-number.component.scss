@@ -1,0 +1,91 @@
+.game-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.game-container h1 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.game-container p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #444;
+}
+
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+input[type="number"]:focus {
+  border: 1px solid #007bff;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+button:hover:not([disabled]) {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.feedback {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+
+.feedback p {
+  padding: 10px;
+  border-radius: 6px;
+  background: #e8f0fe;
+  color: #333;
+}
+
+.game-over {
+  margin-top: 20px;
+}
+
+.game-over button {
+  background-color: #28a745;
+}
+
+.game-over button:hover {
+  background-color: #1e7e34;
+}
