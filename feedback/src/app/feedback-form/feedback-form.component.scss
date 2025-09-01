@@ -1,0 +1,100 @@
+/* Container */
+.form-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Form Groups */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+/* Error States */
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border-color: #e74c3c;
+  background: #fdf2f2;
+}
+
+.error {
+  font-size: 0.85rem;
+  color: #e74c3c;
+  margin-top: 4px;
+}
+
+/* Success Message */
+.success {
+  margin-top: 15px;
+  padding: 12px;
+  background: #e6ffed;
+  border: 1px solid #27ae60;
+  border-radius: 8px;
+  color: #2d8a44;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover:not(:disabled) {
+  background: #357abd;
+}
+
+button:disabled {
+  background: #a8c7f0;
+  cursor: not-allowed;
+}

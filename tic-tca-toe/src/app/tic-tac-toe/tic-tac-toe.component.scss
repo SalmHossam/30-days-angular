@@ -1,0 +1,86 @@
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4ff, #dbeafe);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #1e3a8a;
+}
+
+.turn-indicator {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9fafb;
+  border: 2px solid #3b82f6;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1e40af;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+}
+
+.cell:hover {
+  background: #e0f2fe;
+  transform: scale(1.05);
+}
+
+.winner,
+.draw-message {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.winner {
+  color: #065f46;
+  background-color: #d1fae5;
+  border: 1px solid #10b981;
+}
+
+.draw-message {
+  color: #92400e;
+  background-color: #fef3c7;
+  border: 1px solid #f59e0b;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2563eb;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}

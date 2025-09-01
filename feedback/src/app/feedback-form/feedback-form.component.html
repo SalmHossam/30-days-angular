@@ -1,0 +1,40 @@
+<div class="form-container">
+  <h2>Feedback Form</h2>
+  <form #feedbackForm="ngForm" (ngSubmit)="onSubmit(feedbackForm)">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" 
+         [(ngModel)]="feedback.name" #name="ngModel" required>
+        <div class="error" *ngIf="name.invalid && name.touched">
+        <div *ngIf="name.errors?.['required']">Name is Required </div>
+        </div>
+    </div>
+        <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"
+        [(ngModel)]="feedback.email" #email="ngModel" required > 
+         <div class="error" *ngIf="email.invalid && email.touched">
+            <div *ngIf="email.errors?.['required']">Email is required.</div>
+            <div *ngIf="email.errors?.['email']">Invalid email format.</div>
+         </div>  
+        
+    </div>
+        <div class="form-group">
+  
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required
+        [(ngModel)]="feedback.message" #message="ngModel"
+        ></textarea>
+         <div class="error" *ngIf="message.invalid && message.touched">
+            Feedback is Required 
+         </div>
+    </div>
+    <button type="submit" [disabled]="feedbackForm.invalid">
+        Submit
+    </button>
+    <div class="success" *ngIf="submitted">
+        Your feedback has been submitted successfully!
+    </div>
+  </form>
+  
+    </div>
