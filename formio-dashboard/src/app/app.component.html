@@ -1,0 +1,21 @@
+<h1 class="text-center">Form.io Integration in Angular</h1>
+
+<!-- Dropdown to select form -->
+<select id="formSelect" 
+        [(ngModel)]="selectedFormUrl" 
+        (ngModelChange)="onFormChange()"
+        class="form-select w-50 mx-auto">
+  <option [ngValue]="null">-- Select a Form --</option>
+  <option *ngFor="let f of forms" [ngValue]="f.url">{{ f.name }}</option>
+</select>
+
+
+<!-- Render the selected form -->
+<div *ngIf="selectedFormUrl">
+  <formio 
+    [src]="selectedFormUrl"
+    [accessKey]="selectedFormUrl"
+    [options]="options"
+    (submit)="onSubmit($event)">
+  </formio>
+</div>
